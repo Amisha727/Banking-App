@@ -1,5 +1,5 @@
 /* eslint-disable no-prototype-builtins */
-import { type ClassValue, clsx } from "clsx";
+import { clsx, type ClassValue } from "clsx";
 import qs from "query-string";
 import { twMerge } from "tailwind-merge";
 
@@ -66,12 +66,11 @@ export const formatDateTime = (dateString: Date) => {
 };
 
 export function formatAmount(amount: number): string {
-  const formatter = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
+  const formatter = new Intl.NumberFormat('en-IN', {
+    style: 'currency',
+    currency: 'INR',
     minimumFractionDigits: 2,
   });
-
   return formatter.format(amount);
 }
 

@@ -10,3 +10,8 @@ Route Groups- to prevent the folder from being included in the route's URL path.
 enabling nested layouts
 organizing routes into groups
 
+npm i query-string
+npm i react-countup
+npm i chart.js
+Hydration-Error- <p><div></div></p>
+npx shadcn-ui@latest add sheet
